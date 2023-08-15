@@ -36,13 +36,13 @@ public class Deck {
             }
         }
         
-        shufflDeck();
+        shuffleDeck();
     }
 
     /**
      * Shuffles the deck of cards
      */
-    public void shufflDeck() {
+    public void shuffleDeck() {
         Collections.shuffle(cardDeck);
     }
 
