@@ -41,11 +41,9 @@ public class Card {
     }
 
     /**
-     * Checks if the card is hidden
+     * Sets the hidden state of the card
      * 
-     * @param card The card to check
-     * 
-     * @return Boolean of whether the card is hidden or not
+     * @param hideCard Boolean to hide or unhide the card
      */
     public void setHidden(boolean hideCard) {
         hidden = hideCard;
