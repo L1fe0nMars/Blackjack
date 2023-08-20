@@ -229,17 +229,17 @@ public class Blackjackgame {
      * @return The dealer's selection
      */
     public int dealerLogic() {
-        int dealerSelecton = 1;
+        int dealerSelection = 1;
         int playerScore = player.getHand().getScore();
         int dealerScore = dealer.getHand().getScore();
 
         if ((player.hasBlackjack() && dealerScore < BlackjackRules.BLACKJACK_VALUE)
         || (dealerScore < BlackjackRules.DEALER_MIN_SCORE && dealerScore < playerScore))
         {
-            dealerSelecton = 0;
+            dealerSelection = 0;
         }
 
-        return dealerSelecton;
+        return dealerSelection;
     }
 
     /**
