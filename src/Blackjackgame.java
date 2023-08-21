@@ -234,7 +234,7 @@ public class Blackjackgame {
         int dealerScore = dealer.getHand().getScore();
 
         if ((player.hasBlackjack() && dealerScore < BlackjackRules.BLACKJACK_VALUE)
-        || (dealerScore < BlackjackRules.DEALER_MIN_SCORE && dealerScore < playerScore))
+        || (dealerScore < BlackjackRules.DEALER_MIN_SCORE && dealerScore <= playerScore))
         {
             dealerSelection = 0;
         }
